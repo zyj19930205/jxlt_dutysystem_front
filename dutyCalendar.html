@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="calendar/css/simple-calendar.css">
+    <script type="text/javascript" src="calendar/js/simple-calendar.js"></script>
+</head>
+<body>
+<div id="container"></div>
+<script>
+    var options = {
+        width: '1000px',
+        height: '550px',
+        mark: {
+            '2019-12-13': '邹宇杰',
+            '2019-12-14': '吴凯',
+            '2019-12-15': '黄广'
+        },
+    }
+    var myCalendar = new SimpleCalendar('#container',options);
+    myCalendar.addMark('2019-12-16','周恬')
+</script>
+</body>
+</html>
